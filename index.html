@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>news with html form</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            .style{
+                background:rgb(15, 43, 15);
+                color:white;
+                position:relative;
+                text-align: center;
+                font-weight: bolder;
+                font-size: large;   
+            }
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="style">
+               <h1 style="font-size:3em;font-weight:bolder;">The Times OF India </h1>
+                <h2 style="font-size:2em;font-weight: bold;">In the morning when we open our doors the hawker throws a newspaper in our home.</h2>
+            </div>
+            <h3 style="text-align: center;font-size: 28px;font-weight: bold">INTERACTIVE SESSION ON MENTAL HEALTH FOR WOMEN PRISONERS</h3>
+        </div>
+        <form>
+            <input type="text" name="news">
+            <input type="submit" onclick="vishnu(event)"> 
+        </form>
+        <p style=" font-size: 42px;font-weight: bolder;">16/12/2022</p>
+        <p id="mynews" style=" font-size: 30px;">Bareilly</p>
+        <script src="./js/script.js"></script>
+        <script>
+            let myobject ={
+                //1 property:value
+
+                //2 method/function
+
+            };//js object object
+
+            //globle variable
+
+            // object.method
+            let n = document.querySelector('input[name="news"]');
+            let myn = document.getElementById("mynews");
+
+            function vishnu(e) {// e is a formal argument
+               
+               let x = 10; // x is a local variable
+               //object.method();
+               e.preventDefault();
+               //Function body
+               //alert("Clicked");
+               // Can we access the global variable inside the function body ?
+               console.log(n.value);
+
+               //myn.innerHTML = myn.innerHTML + n.value;
+               myn.innerHTML +=  " " + n.value;
+               myn.style.color = "black";
+          }
+          //console.log(x);
+        </script>
+    </body>
+</html>
